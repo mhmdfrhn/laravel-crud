@@ -7,58 +7,79 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## CRUD Nilai Mahasiswa
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#### Version 1.0
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Deskripsi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Ini adalah proyek dashboard sederhana menggunakan template Sbadmin2 untuk mengelola data nilai mahasiswa. Aplikasi ini memungkinkan admin untuk melakukan operasi CRUD (Create, Read, Update, Delete) terhadap data mahasiswa dengan kolom berikut: 'nama', 'nim', 'jurusan', dan 'nilai'.
 
-## Learning Laravel
+#### Teknologi yang Digunakan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Laravel Framework: Laravel 8
+- Database: MySQL
+- sb-admin-2
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Requirements
 
-## Laravel Sponsors
+- XAMPP : PHP >= 8.0.0
+- Laravel: V.8
+- Google Chrome >= 89.0.4389.114
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### Instalation
 
-### Premium Partners
+```
+### Clone repositori ini:
+git clone https://github.com/mhmdfrhn/laravel-crud.git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Masuk ke direktori proyek:
+cd repo-dashboard-nilai-mahasiswa
 
-## Contributing
+### Install dependensi menggunakan Composer:
+composer install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Install dependensi menggunakan Composer:
+composer install
 
-## Code of Conduct
+### Salin file .env.example menjadi .env:
+cp .env.example .env
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Generate kunci aplikasi Laravel:
+php artisan key:generate
 
-## Security Vulnerabilities
+### Konfigurasi file .env sesuai dengan pengaturan database MySQL Anda:
+DB_CONNECTION=mysql
+DB_HOST=your_database_host
+DB_PORT=your_database_port
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### php artisan migrate
+php artisan migrate
 
-## License
+### Jalankan server Laravel:
+php artisan serve
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Buka aplikasi di browser dengan mengakses:
+http://localhost:8000/.
+```
+
+### Usage
+
+Berikut adalah langkah-langkah untuk menggunakan aplikasi CRUD Nilai Mahasiswa:
+
+1. Tambahkan data mahasiswa baru dengan mengklik tombol "Tambah Mahasiswa" dan mengisi formulir yang sesuai dengan kolom 'nama', 'nim', 'jurusan', dan 'nilai'.
+2. Lihat daftar mahasiswa yang ada dengan mengklik tombol "Lihat Mahasiswa".
+3. Untuk memperbarui data mahasiswa, klik tombol "Edit" di samping entri mahasiswa yang ingin diperbarui, lalu perbarui informasi yang diinginkan dalam formulir.
+4. Untuk menghapus data mahasiswa, klik tombol "Hapus" di samping entri mahasiswa yang ingin dihapus dan konfirmasikan penghapusan.
+5.
+
+### Notes
+
+Pastikan Anda telah mengkonfigurasi koneksi database MySQL dengan benar di file .env dan telah menjalankan migrasi database sebelum menggunakan aplikasi ini.
+
+Selain itu, pastikan Anda telah memahami Laravel 8 dan template dashboard Sbadmin2 untuk melakukan penyesuaian dan pengembangan lebih lanjut sesuai kebutuhan proyek Anda.
+
+Semoga informasi ini bermanfaat untuk Anda dalam mendokumentasikan proyek CRUD Nilai Mahasiswa menggunakan template dashboard Sbadmin2 dan Laravel 8.
